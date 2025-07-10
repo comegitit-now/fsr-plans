@@ -1,143 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compare All Plans & Features</title>
+  <meta charset="UTF-8">
+  <title>Compare Plans — 5 Star Reviews</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      background: #f7f9fc;
-      color: #333;
       margin: 0;
       padding: 0;
+      background: #fffdfb;
+      color: #333;
     }
-
+    header {
+      background-color: #f16b6b;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.4em;
+      margin: 0;
+    }
+    header p {
+      margin-top: 12px;
+      font-size: 1.1em;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .container {
+      padding: 40px 20px;
       max-width: 960px;
-      margin: 40px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      margin: auto;
     }
-
-    h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .subtitle {
-      font-size: 16px;
-      color: #666;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 40px;
+      margin-top: 30px;
     }
-
     th, td {
+      border: 1px solid #ddd;
       padding: 16px;
-      border: 1px solid #e2e8f0;
       text-align: center;
+      vertical-align: middle;
     }
-
     th {
-      background: #f0f4f8;
-      font-weight: 600;
+      background-color: #fbe9e9;
     }
-
     tr:nth-child(even) {
-      background: #fafafa;
+      background-color: #fdf2f2;
     }
-
-    .check {
-      color: green;
-      font-size: 18px;
+    tr:hover {
+      background-color: #fcecec;
     }
-
-    .cross {
-      color: red;
-      font-size: 18px;
-    }
-
     .highlight {
-      background: #e0f7ff;
+      font-weight: bold;
+      color: #f16b6b;
     }
-
-    .footer-note {
-      font-size: 14px;
-      color: #555;
+    .cta {
+      margin-top: 40px;
       text-align: center;
     }
-
-    @media (max-width: 768px) {
-      table {
-        font-size: 14px;
-      }
-
-      th, td {
-        padding: 12px;
-      }
+    .cta a {
+      background-color: #f16b6b;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 6px;
+    }
+    .cta a:hover {
+      background-color: #d95656;
+    }
+    .buy-button {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .buy-button:hover {
+      background-color: #3e8e41;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Compare All Plans & Features</h1>
-    <div class="subtitle">Choose the plan that fits your business best.</div>
 
-    <table>
-      <tr>
-        <th>Feature</th>
-        <th>Free Plan</th>
-        <th class="highlight">Premium Plan</th>
-      </tr>
-      <tr>
-        <td>Manually Add Reviews</td>
-        <td class="check">✔️</td>
-        <td class="check">✔️</td>
-      </tr>
-      <tr>
-        <td>Reviewer Photos</td>
-        <td class="check">✔️</td>
-        <td class="check">✔️</td>
-      </tr>
-      <tr>
-        <td>Review Images</td>
-        <td class="check">✔️</td>
-        <td class="check">✔️</td>
-      </tr>
-      <tr>
-        <td>Auto Import Google Reviews</td>
-        <td class="cross">—</td>
-        <td class="check">✔️</td>
-      </tr>
-      <tr>
-        <td>Auto Import Yelp Reviews</td>
-        <td class="cross">—</td>
-        <td class="check">✔️</td>
-      </tr>
-      <tr>
-        <td>Up to 400 Reviews per Site</td>
-        <td class="cross">—</td>
-        <td class="check">✔️</td>
-      </tr>
-      <tr>
-        <td>Fast Delivery (within 24 hours)</td>
-        <td class="cross">—</td>
-        <td class="check">✔️</td>
-      </tr>
-    </table>
+<header>
+  <h1>Unlock Your Best Reviews</h1>
+  <p>Google and Yelp limit access to reviews through their public APIs. We go beyond that — safely and reliably retrieving your reviews, fully formatted and ready to import into your site. No dev tools. No headaches. No hidden fees.</p>
+</header>
 
-    <div class="footer-note">
-      Need help choosing a plan? Contact us at <a href="mailto:support@performpills.com">support@performpills.com</a>
-    </div>
+<div class="container">
+  <h2 style="text-align:center;">Compare All Plans & Features</h2>
+  <table>
+    <tr>
+      <th>Feature</th>
+      <th>Free</th>
+      <th>Starter<br>$19<br><a class="buy-button" href="https://square.link/u/EDZag3yY" target="_blank">Buy Now</a></th>
+      <th>Pro<br>$49<br><a class="buy-button" href="https://square.link/u/o6czHUAU" target="_blank">Buy Now</a></th>
+    </tr>
+    <tr>
+      <td>Manual Review Entry</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Visual Review Cards w/ Photos</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Unlock Up to 400 Reviews (Yelp + Google)</td>
+      <td>—</td>
+      <td class="highlight">✅ (one-time)</td>
+      <td class="highlight">✅ (x3 sites or refreshes)</td>
+    </tr>
+    <tr>
+      <td>Supports Google Review Retrieval</td>
+      <td>—</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Supports Yelp Review Retrieval</td>
+      <td>—</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Photo Thumbnails & Full-Size Views</td>
+      <td>—</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Filter Reviews by Rating or Source</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Bulk Edit + Sort + Hide/Unhide</td>
+      <td>—</td>
+      <td>—</td>
+      <td class="highlight">✅</td>
+    </tr>
+    <tr>
+      <td>Email Support</td>
+      <td>Community Only</td>
+      <td class="highlight">✅</td>
+      <td class="highlight">✅ Priority</td>
+    </tr>
+  </table>
+
+  <div class="cta">
+    <a href="mailto:kevin.tran.forty@gmail.com?subject=Unlock My 5 Star Reviews">📩 Request My Reviews</a>
   </div>
+</div>
+
+<footer>
+  &copy; <?php echo date('Y'); ?> 5 Star Reviews. Built with ❤️ by Kevin Tran.
+</footer>
+
 </body>
 </html>
