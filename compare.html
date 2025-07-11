@@ -1,152 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Compare Plans – 5 Star Reviews</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compare Plans – Five Star Reviews</title>
   <style>
     body {
-      font-family: system-ui, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       background: #fff;
-      color: #111;
-      line-height: 1.6;
+      color: #333;
+      text-align: center;
     }
 
-    .container {
-      padding: 24px;
-      max-width: 900px;
-      margin: auto;
+    .logo {
+      max-width: 160px;
+      margin: 0 auto 20px;
+      display: block;
     }
 
     h1 {
-      font-size: 26px;
-      margin-bottom: 12px;
+      font-size: 1.8em;
+      margin-bottom: 10px;
     }
 
     p.intro {
-      font-size: 20px;
-      color: #444;
-      margin-bottom: 24px;
+      font-size: 1.1em;
+      max-width: 600px;
+      margin: 0 auto 30px;
     }
 
     table {
       width: 100%;
+      max-width: 800px;
+      margin: 0 auto 30px;
       border-collapse: collapse;
-      font-size: 20px;
+      font-size: 1.05em;
     }
 
     th, td {
-      padding: 14px 12px;
-      border-bottom: 1px solid #eee;
-      text-align: left;
-      vertical-align: top;
+      padding: 12px 10px;
+      border-bottom: 1px solid #ddd;
+      vertical-align: middle;
     }
 
     th {
-      background: #f9f9f9;
+      background-color: #f9f9f9;
+      font-weight: 600;
     }
 
-    td.center {
+    td {
       text-align: center;
     }
 
-    .buy-btn {
-      display: inline-block;
-      margin: 16px 6px 0 6px;
-      padding: 14px 22px;
-      background: #007bff;
-      color: white;
-      border-radius: 24px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
+    td:first-child {
+      text-align: left;
     }
 
-    .footnote {
-      font-size: 18px;
-      color: #555;
-      margin-top: 32px;
+    .checkmark {
+      color: #26c281;
+      font-size: 1.4em;
+    }
+
+    .crossmark {
+      color: #ff3b30;
+      font-size: 1.4em;
+    }
+
+    .button-group {
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      margin: 8px;
+      border: none;
+      border-radius: 999px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .footer-note {
+      font-size: 1.05em;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .footer-note strong {
+      font-weight: 600;
     }
 
     @media (max-width: 600px) {
-      .container {
-        padding: 16px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      p.intro {
-        font-size: 18px;
-      }
-
       table {
-        font-size: 18px;
+        font-size: 1.15em;
       }
 
-      .buy-btn {
-        display: block;
-        width: 100%;
-        margin: 16px 0;
-        text-align: center;
-        font-size: 18px;
+      th, td {
+        padding: 14px 8px;
       }
 
-      .footnote {
-        font-size: 17px;
+      .btn {
+        font-size: 1.1em;
+        padding: 12px 24px;
       }
     }
   </style>
 </head>
 <body>
 
-<div class="container">
+  <img src="YOUR_LOGO_FILENAME_HERE.png" alt="Five Star Reviews Logo" class="logo" />
+
   <h1>Compare Free vs Paid Plans</h1>
   <p class="intro">
-    All versions of <strong>5 Star Reviews</strong> let you showcase your best Google and Yelp reviews beautifully.
-    Upgrade to unlock import tools, styling, and premium features.
+    All versions of <strong>5 Star Reviews</strong> let you showcase your best Google and Yelp reviews beautifully. Upgrade to unlock import tools, styling, and premium features.
   </p>
 
   <table>
     <thead>
       <tr>
         <th>Feature</th>
-        <th class="center">Free</th>
-        <th class="center">Paid</th>
+        <th>Free</th>
+        <th>Paid</th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>Modern Card Layout</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Supports Google, Yelp, and Manual Reviews</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Filter by Rating, Date, or Source</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Reviewer Photos & Source Icons</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Thumbnails & Full-Size Photos<br><small>(Not available in Google/Yelp APIs)</small></td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Custom Styling (Stars, Fonts, Layout)</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Swipe-Based Modal Browsing</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>Bulk Edit / Hide / Manage</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>API Import Support</td><td class="center">✅</td><td class="center">✅</td></tr>
-      <tr><td>JSON File Import</td><td class="center">❌</td><td class="center">✅</td></tr>
-      <tr><td>Import Google Reviews</td><td class="center">❌</td><td class="center">(1–3 site unlocks)</td></tr>
-      <tr><td>Import Yelp Reviews</td><td class="center">❌</td><td class="center">(1–3 site unlocks)</td></tr>
-      <tr><td>Priority Email Support</td><td class="center">❌</td><td class="center">✅</td></tr>
-      <tr>
-        <td></td>
-        <td colspan="2" class="center">
-          <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a>
-          <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
-        </td>
-      </tr>
+      <tr><td>Modern Card Layout</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Supports Google, Yelp, and Manual Reviews</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Filter by Rating, Date, or Source</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Reviewer Photos & Source Icons</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Thumbnails & Full-Size Photos <br><small>(Not available in Google/Yelp APIs)</small></td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Custom Styling (Stars, Fonts, Layout)</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Swipe-Based Modal Browsing</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Bulk Edit / Hide / Manage</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>API Import Support</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>JSON File Import</td><td class="crossmark">✘</td><td class="checkmark">✔</td></tr>
+      <tr><td>Import Google Reviews</td><td class="crossmark">✘</td><td>(1–3 site unlocks)</td></tr>
+      <tr><td>Import Yelp Reviews</td><td class="crossmark">✘</td><td>(1–3 site unlocks)</td></tr>
+      <tr><td>Priority Email Support</td><td class="crossmark">✘</td><td class="checkmark">✔</td></tr>
     </tbody>
   </table>
 
-  <p class="footnote">
-    🔁 <strong>Need more reviews later?</strong> Use the <strong>Review Refresh</strong> option for just <strong>$9</strong> to unlock another batch of up to 200 Google or Yelp reviews.
-    Available to Starter and Pro users only.
+  <div class="button-group">
+    <a href="https://square.link/u/EDZag3yY" class="btn">Buy Starter ($19)</a>
+    <a href="https://square.link/u/o6czHUAU" class="btn">Buy Pro ($49)</a>
+  </div>
+
+  <p class="footer-note">
+    🟡 <strong>Need more reviews later?</strong> Use the <strong>Review Refresh</strong> option for just <strong>$9</strong> to unlock another batch of up to 200 Google or Yelp reviews. Available to Starter and Pro users only.
   </p>
-</div>
 
 </body>
 </html>
