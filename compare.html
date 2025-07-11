@@ -1,180 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Compare Plans — 5 Star Reviews</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fffdfb;
-      color: #333;
-    }
-    header {
-      background-color: #f16b6b;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.4em;
-      margin: 0;
-    }
-    header p {
-      margin-top: 12px;
-      font-size: 1.1em;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .container {
-      padding: 40px 20px;
-      max-width: 960px;
-      margin: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 16px;
-      text-align: center;
-      vertical-align: middle;
-    }
-    th {
-      background-color: #fbe9e9;
-    }
-    tr:nth-child(even) {
-      background-color: #fdf2f2;
-    }
-    tr:hover {
-      background-color: #fcecec;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #f16b6b;
-    }
-    .cta {
-      margin-top: 40px;
-      text-align: center;
-    }
-    .cta a {
-      background-color: #f16b6b;
-      color: white;
-      padding: 14px 28px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-      border-radius: 6px;
-    }
-    .cta a:hover {
-      background-color: #d95656;
-    }
-    .buy-button {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 8px 16px;
-      background-color: #4CAF50;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.9em;
-    }
-    .buy-button:hover {
-      background-color: #3e8e41;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
+<table style="width:100%; border-collapse:collapse; text-align:center;">
+  <thead>
+    <tr>
+      <th style="border-bottom:2px solid #ccc; text-align:left;">Feature</th>
+      <th style="border-bottom:2px solid #ccc;">Free</th>
+      <th style="border-bottom:2px solid #ccc;">Starter</th>
+      <th style="border-bottom:2px solid #ccc;">Pro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align:left;">Modern Card Layout for All Reviews</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Supports Google, Yelp, and Manual Reviews</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Filter by Rating, Date, or Source</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Reviewer Photos & Source Icons</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr>
+      <td style="text-align:left;">
+        Thumbnails & Full-Size Photo Support<br>
+        <small>(A feature not available in the public Yelp or Google APIs)</small>
+      </td>
+      <td>✅</td><td>✅</td><td>✅</td>
+    </tr>
+    <tr><td style="text-align:left;">Custom Styling (Stars, Fonts, Colors, Layout)</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Swipe-Based Review Modal Browsing</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Bulk Hide / Edit / Manage Reviews</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">API Import Support (Google & Yelp)</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Additional Premium Features</td><td>✅</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Import up to 200 Google Reviews</td><td>❌</td><td>✅ (1 site unlock)</td><td>✅ (3 site unlocks)</td></tr>
+    <tr><td style="text-align:left;">Import up to 200 Yelp Reviews</td><td>❌</td><td>✅ (1 site unlock)</td><td>✅ (3 site unlocks)</td></tr>
+    <tr><td style="text-align:left;">JSON File Import</td><td>❌</td><td>✅</td><td>✅</td></tr>
+    <tr><td style="text-align:left;">Priority Email Support</td><td>❌</td><td>❌</td><td>✅</td></tr>
+    <!-- Buy Buttons -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="https://square.link/u/EDZag3yY" target="_blank" style="display:inline-block; margin-top:8px; padding:10px 20px; background:#007bff; color:#fff; border-radius:25px; text-decoration:none;">Buy Starter ($19)</a>
+      </td>
+      <td>
+        <a href="https://square.link/u/o6czHUAU" target="_blank" style="display:inline-block; margin-top:8px; padding:10px 20px; background:#007bff; color:#fff; border-radius:25px; text-decoration:none;">Buy Pro ($49)</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<header>
-  <h1>Unlock Your Best Reviews</h1>
-  <p>Google and Yelp limit access to reviews through their public APIs. We go beyond that — safely and reliably retrieving your reviews, fully formatted and ready to import into your site. No dev tools. No headaches. No hidden fees.</p>
-</header>
-
-<div class="container">
-  <h2 style="text-align:center;">Compare All Plans & Features</h2>
-  <table>
-    <tr>
-      <th>Feature</th>
-      <th>Free</th>
-      <th>Starter<br>$19<br><a class="buy-button" href="https://square.link/u/EDZag3yY" target="_blank">Buy Now</a></th>
-      <th>Pro<br>$49<br><a class="buy-button" href="https://square.link/u/o6czHUAU" target="_blank">Buy Now</a></th>
-    </tr>
-    <tr>
-      <td>Manual Review Entry</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Visual Review Cards w/ Photos</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Unlock Up to 400 Reviews (Yelp + Google)</td>
-      <td>—</td>
-      <td class="highlight">✅ (one-time)</td>
-      <td class="highlight">✅ (x3 sites or refreshes)</td>
-    </tr>
-    <tr>
-      <td>Supports Google Review Retrieval</td>
-      <td>—</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Supports Yelp Review Retrieval</td>
-      <td>—</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Photo Thumbnails & Full-Size Views</td>
-      <td>—</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Filter Reviews by Rating or Source</td>
-      <td>—</td>
-      <td>—</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Bulk Edit + Sort + Hide/Unhide</td>
-      <td>—</td>
-      <td>—</td>
-      <td class="highlight">✅</td>
-    </tr>
-    <tr>
-      <td>Email Support</td>
-      <td>Community Only</td>
-      <td class="highlight">✅</td>
-      <td class="highlight">✅ Priority</td>
-    </tr>
-  </table>
-
-  <div class="cta">
-    <a href="mailto:kevin.tran.forty@gmail.com?subject=Unlock My 5 Star Reviews">📩 Request My Reviews</a>
-  </div>
-</div>
-
-<footer>
-  &copy; <?php echo date('Y'); ?> 5 Star Reviews. Built with ❤️ by Kevin Tran.
-</footer>
-
-</body>
-</html>
+<p style="margin-top:12px; font-size:14px; color:#555;">
+  🔁 <strong>Need more reviews later?</strong> Use the <strong>Review Refresh</strong> option for <strong>$9</strong> to unlock another batch of up to 200 Google or Yelp reviews. Available to Starter and Pro users only.
+</p>
