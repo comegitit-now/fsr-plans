@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Compare All Plans – Five Star Reviews</title>
+  <title>Compare Plans – 5 Star Reviews</title>
   <style>
     body {
       font-family: system-ui, sans-serif;
@@ -11,8 +11,8 @@
       color: #111;
     }
     h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
+      font-size: 26px;
+      margin-bottom: 10px;
     }
     p.intro {
       font-size: 16px;
@@ -22,22 +22,20 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      text-align: center;
+      font-size: 16px;
     }
     th, td {
-      padding: 12px;
+      padding: 10px;
       border-bottom: 1px solid #eee;
+      text-align: center;
     }
-    th {
-      background-color: #f8f8f8;
-    }
-    td:first-child, th:first-child {
+    th:first-child, td:first-child {
       text-align: left;
     }
     .buy-btn {
       display: inline-block;
       margin-top: 12px;
-      padding: 10px 22px;
+      padding: 10px 20px;
       background: #007bff;
       color: white;
       border-radius: 24px;
@@ -45,66 +43,60 @@
       font-weight: bold;
     }
     .footnote {
-      margin-top: 16px;
       font-size: 14px;
       color: #555;
+      margin-top: 16px;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
+      body {
+        margin: 20px;
+      }
       table {
-        font-size: 14px;
+        font-size: 15px;
       }
     }
   </style>
 </head>
 <body>
 
-<h1>Compare All Plans & Features</h1>
+<h1>Compare Free vs Paid Plans</h1>
 <p class="intro">
-  All versions of <strong>Five Star Reviews</strong> let you beautifully display your best Google and Yelp reviews in a modern card layout.  
-  Upgrade to Starter or Pro to unlock all your reviews.
+  All versions of <strong>5 Star Reviews</strong> include core features for displaying your best Google and Yelp reviews.  
+  Upgrade to unlock advanced imports, styling, and support.
 </p>
 
-<div style="overflow-x: auto;">
-  <table>
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Free</th>
-        <th>Starter<br>($19)</th>
-        <th>Pro<br>($49)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Modern Card Layout for All Reviews</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Supports Google, Yelp, and Manual Reviews</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Filter by Rating, Date, or Source</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Reviewer Photos & Source Icons</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr>
-        <td>Thumbnails & Full-Size Photo Support<br><small>(A feature not available in the public Google or Yelp APIs)</small></td>
-        <td>✅</td><td>✅</td><td>✅</td>
-      </tr>
-      <tr><td>Custom Styling (Stars, Fonts, Colors, Layout)</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Swipe-Based Review Modal Browsing</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Bulk Hide / Edit / Manage Reviews</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>API Import Support (Google & Yelp)</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Additional Premium Features</td><td>✅</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Import up to 200 Google Reviews</td><td>❌</td><td>✅ (1 site unlock)</td><td>✅ (3 site unlocks)</td></tr>
-      <tr><td>Import up to 200 Yelp Reviews</td><td>❌</td><td>✅ (1 site unlock)</td><td>✅ (3 site unlocks)</td></tr>
-      <tr><td>JSON File Import</td><td>❌</td><td>✅</td><td>✅</td></tr>
-      <tr><td>Priority Email Support</td><td>❌</td><td>✅</td><td>✅</td></tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td>
-          <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a>
-        </td>
-        <td>
-          <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Free</th>
+      <th>Paid</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Modern Card Layout</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Supports Google, Yelp, and Manual Reviews</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Filter by Rating, Date, or Source</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Reviewer Photos & Source Icons</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Thumbnails & Full-Size Photos <br><small>(Not available in Google/Yelp APIs)</small></td><td>✅</td><td>✅</td></tr>
+    <tr><td>Custom Styling (Stars, Fonts, Colors)</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Swipe Modal Browsing</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Bulk Edit / Hide / Manage</td><td>✅</td><td>✅</td></tr>
+    <tr><td>API Support</td><td>✅</td><td>✅</td></tr>
+    <tr><td>JSON File Import</td><td>❌</td><td>✅</td></tr>
+    <tr><td>Import Google Reviews</td><td>❌</td><td>✅ <br><small>(1–3 site unlocks depending on plan)</small></td></tr>
+    <tr><td>Import Yelp Reviews</td><td>❌</td><td>✅ <br><small>(1–3 site unlocks depending on plan)</small></td></tr>
+    <tr><td>Priority Email Support</td><td>❌</td><td>✅</td></tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>
+        <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a><br><br>
+        <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <p class="footnote">
   🔁 <strong>Need more reviews later?</strong> Use the <strong>Review Refresh</strong> option for just <strong>$9</strong> to unlock another batch of up to 200 Google or Yelp reviews.  
