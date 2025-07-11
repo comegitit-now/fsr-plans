@@ -16,6 +16,8 @@
 
     .container {
       padding: 24px;
+      max-width: 900px;
+      margin: auto;
     }
 
     h1 {
@@ -29,32 +31,31 @@
       margin-bottom: 24px;
     }
 
-    .grid-table {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 8px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
       font-size: 20px;
-      line-height: 1.6;
     }
 
-    .grid-table div {
-      padding: 14px 8px;
+    th, td {
+      padding: 14px 12px;
       border-bottom: 1px solid #eee;
+      text-align: left;
+      vertical-align: top;
     }
 
-    .grid-table .header {
-      font-weight: bold;
+    th {
       background: #f9f9f9;
     }
 
-    .grid-table .center {
+    td.center {
       text-align: center;
     }
 
     .buy-btn {
       display: inline-block;
-      margin: 14px 6px 0 6px;
-      padding: 12px 24px;
+      margin: 16px 6px 0 6px;
+      padding: 14px 22px;
       background: #007bff;
       color: white;
       border-radius: 24px;
@@ -66,43 +67,36 @@
     .footnote {
       font-size: 18px;
       color: #555;
-      margin-top: 30px;
-      line-height: 1.7;
+      margin-top: 32px;
     }
 
-    /* Mobile Adjustments */
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .container {
         padding: 16px;
       }
 
-      .grid-table {
-        grid-template-columns: 1fr;
-        font-size: 20px;
+      h1 {
+        font-size: 24px;
       }
 
-      .grid-table .header {
-        background: none;
-        font-size: 22px;
-        margin-top: 12px;
+      p.intro {
+        font-size: 18px;
       }
 
-      .grid-table div {
-        border-bottom: none;
-        border-top: 1px solid #eee;
-      }
-
-      .grid-table .center {
-        text-align: left;
+      table {
+        font-size: 18px;
       }
 
       .buy-btn {
         display: block;
         width: 100%;
         margin: 16px 0;
-        font-size: 20px;
         text-align: center;
-        box-sizing: border-box;
+        font-size: 18px;
+      }
+
+      .footnote {
+        font-size: 17px;
       }
     }
   </style>
@@ -116,30 +110,37 @@
     Upgrade to unlock import tools, styling, and premium features.
   </p>
 
-  <div class="grid-table">
-    <div class="header">Feature</div>
-    <div class="header center">Free</div>
-    <div class="header center">Paid</div>
-
-    <div>Modern Card Layout</div><div class="center">✅</div><div class="center">✅</div>
-    <div>Supports Google, Yelp, and Manual Reviews</div><div class="center">✅</div><div class="center">✅</div>
-    <div>Filter by Rating, Date, or Source</div><div class="center">✅</div><div class="center">✅</div>
-    <div>Reviewer Photos & Source Icons</div><div class="center">✅</div><div class="center">✅</div>
-    <div>Thumbnails & Full-Size Photos<br><small>(Not available in Google/Yelp APIs)</small></div><div class="center">✅</div><div class="center">✅</div>
-    <div>Custom Styling (Stars, Fonts, Layout)</div><div class="center">✅</div><div class="center">✅</div>
-    <div>Swipe-Based Modal Browsing</div><div class="center">✅</div><div class="center">✅</div>
-    <div>Bulk Edit / Hide / Manage</div><div class="center">✅</div><div class="center">✅</div>
-    <div>API Import Support</div><div class="center">✅</div><div class="center">✅</div>
-    <div>JSON File Import</div><div class="center">❌</div><div class="center">✅</div>
-    <div>Import Google Reviews</div><div class="center">❌</div><div class="center">(1–3 site unlocks)</div>
-    <div>Import Yelp Reviews</div><div class="center">❌</div><div class="center">(1–3 site unlocks)</div>
-    <div>Priority Email Support</div><div class="center">❌</div><div class="center">✅</div>
-    <div></div><div></div>
-    <div class="center">
-      <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a>
-      <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
-    </div>
-  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th class="center">Free</th>
+        <th class="center">Paid</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Modern Card Layout</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Supports Google, Yelp, and Manual Reviews</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Filter by Rating, Date, or Source</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Reviewer Photos & Source Icons</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Thumbnails & Full-Size Photos<br><small>(Not available in Google/Yelp APIs)</small></td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Custom Styling (Stars, Fonts, Layout)</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Swipe-Based Modal Browsing</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>Bulk Edit / Hide / Manage</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>API Import Support</td><td class="center">✅</td><td class="center">✅</td></tr>
+      <tr><td>JSON File Import</td><td class="center">❌</td><td class="center">✅</td></tr>
+      <tr><td>Import Google Reviews</td><td class="center">❌</td><td class="center">(1–3 site unlocks)</td></tr>
+      <tr><td>Import Yelp Reviews</td><td class="center">❌</td><td class="center">(1–3 site unlocks)</td></tr>
+      <tr><td>Priority Email Support</td><td class="center">❌</td><td class="center">✅</td></tr>
+      <tr>
+        <td></td>
+        <td colspan="2" class="center">
+          <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a>
+          <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <p class="footnote">
     🔁 <strong>Need more reviews later?</strong> Use the <strong>Review Refresh</strong> option for just <strong>$9</strong> to unlock another batch of up to 200 Google or Yelp reviews.
