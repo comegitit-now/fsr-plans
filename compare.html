@@ -17,15 +17,15 @@
     p.intro {
       font-size: 15px;
       color: #444;
-      margin-bottom: 25px;
+      margin-bottom: 20px;
     }
     table {
-      width: 100%;
+      min-width: 550px;
       border-collapse: collapse;
       font-size: 15px;
     }
     th, td {
-      padding: 8px 6px;
+      padding: 8px;
       border-bottom: 1px solid #eee;
       text-align: center;
     }
@@ -34,7 +34,7 @@
     }
     .buy-btn {
       display: inline-block;
-      margin: 10px 4px 0 4px;
+      margin: 8px 4px 0 4px;
       padding: 8px 18px;
       background: #007bff;
       color: white;
@@ -44,22 +44,17 @@
       font-size: 14px;
     }
     .footnote {
-      font-size: 13px;
+      font-size: 14px;
       color: #555;
       margin-top: 16px;
       line-height: 1.4;
     }
-
-    /* Responsive Tweaks */
     @media (max-width: 600px) {
       body {
         margin: 16px;
       }
       h1 {
         font-size: 20px;
-      }
-      table {
-        font-size: 14px;
       }
       .buy-btn {
         display: block;
@@ -77,41 +72,44 @@
   Upgrade to unlock import tools, styling, and premium features.
 </p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Feature</th>
-      <th>Free</th>
-      <th>Paid</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Modern Card Layout</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Supports Google, Yelp, and Manual Reviews</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Filter by Rating, Date, or Source</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Reviewer Photos & Source Icons</td><td>✅</td><td>✅</td></tr>
-    <tr>
-      <td>Thumbnails & Full-Size Photos<br><small>(Not available in Google/Yelp APIs)</small></td>
-      <td>✅</td><td>✅</td>
-    </tr>
-    <tr><td>Custom Styling (Stars, Fonts, Layout)</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Swipe-Based Modal Browsing</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Bulk Edit / Hide / Manage</td><td>✅</td><td>✅</td></tr>
-    <tr><td>API Import Support</td><td>✅</td><td>✅</td></tr>
-    <tr><td>JSON File Import</td><td>❌</td><td>✅</td></tr>
-    <tr><td>Import Google Reviews</td><td>❌</td><td>✅<br><small>(1–3 site unlocks)</small></td></tr>
-    <tr><td>Import Yelp Reviews</td><td>❌</td><td>✅<br><small>(1–3 site unlocks)</small></td></tr>
-    <tr><td>Priority Email Support</td><td>❌</td><td>✅</td></tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td>
-        <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a>
-        <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<!-- ✅ Responsive Table Scroll Container -->
+<div style="overflow-x:auto;">
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Free</th>
+        <th>Paid</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Modern Card Layout</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Supports Google, Yelp, and Manual Reviews</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Filter by Rating, Date, or Source</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Reviewer Photos & Source Icons</td><td>✅</td><td>✅</td></tr>
+      <tr>
+        <td>Thumbnails & Full-Size Photos<br><small>(Not available in Google/Yelp APIs)</small></td>
+        <td>✅</td><td>✅</td>
+      </tr>
+      <tr><td>Custom Styling (Stars, Fonts, Layout)</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Swipe-Based Modal Browsing</td><td>✅</td><td>✅</td></tr>
+      <tr><td>Bulk Edit / Hide / Manage</td><td>✅</td><td>✅</td></tr>
+      <tr><td>API Import Support</td><td>✅</td><td>✅</td></tr>
+      <tr><td>JSON File Import</td><td>❌</td><td>✅</td></tr>
+      <tr><td>Import Google Reviews</td><td>❌</td><td>✅<br><small>(1–3 site unlocks)</small></td></tr>
+      <tr><td>Import Yelp Reviews</td><td>❌</td><td>✅<br><small>(1–3 site unlocks)</small></td></tr>
+      <tr><td>Priority Email Support</td><td>❌</td><td>✅</td></tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>
+          <a class="buy-btn" href="https://square.link/u/EDZag3yY" target="_blank">Buy Starter ($19)</a>
+          <a class="buy-btn" href="https://square.link/u/o6czHUAU" target="_blank">Buy Pro ($49)</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <p class="footnote">
   🔁 <strong>Need more reviews later?</strong> Use the <strong>Review Refresh</strong> option for just <strong>$9</strong> to unlock another batch of up to 200 Google or Yelp reviews.  
