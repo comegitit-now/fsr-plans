@@ -14,14 +14,14 @@
       text-align: center;
     }
 
+    .logo {
+      width: 100%;
+      max-width: 390px;
+      height: auto;
+      margin: 0 auto 30px;
+      display: block;
+    }
 
-.logo {
-  width: 100%;
-  max-width: 390px;
-  height: auto;
-  margin: 0 auto 30px;
-  display: block;
-}
     h1 {
       font-size: 1.8em;
       margin-bottom: 10px;
@@ -87,15 +87,34 @@
       display: inline-block;
     }
 
+    .btn.featured {
+      background-color: #28a745;
+    }
+
+    .btn.coffee {
+      background-color: #555;
+    }
+
     .footer-note {
       font-size: 1.05em;
       max-width: 600px;
-      margin: 0 auto;
+      margin: 30px auto 0;
       text-align: left;
     }
 
     .footer-note strong {
       font-weight: 600;
+    }
+
+    .promo-banner {
+      background-color: #ffe27a;
+      color: #333;
+      font-size: 1.1em;
+      padding: 15px 20px;
+      margin: 40px auto 20px;
+      border-radius: 10px;
+      max-width: 700px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     }
 
     @media (max-width: 600px) {
@@ -112,24 +131,13 @@
         padding: 12px 24px;
       }
     }
-    .promo-banner {
-  background-color: #ffe27a;
-  color: #333;
-  font-size: 1.1em;
-  padding: 15px 20px;
-  margin: 40px auto 20px;
-  border-radius: 10px;
-  max-width: 700px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-    
   </style>
 </head>
 <body>
 
   <img src="https://raw.githubusercontent.com/comegitit-now/fsr-plans/d8a31ad696ce73e9d16db6c7b84123f22d46f9bd/five-stars-reviews-logo.png" alt="Five Star Reviews Logo" class="logo" />
 
-  <h1>Compare Free vs Paid Plans</h1>
+  <h1>Compare Free vs Premium Plans</h1>
   <p class="intro">
     All versions of Five Star Reviews let you showcase your best Google and Yelp reviews beautifully — even without an API. Upgrade to unlock import tools, automation, and advanced features.
   </p>
@@ -139,7 +147,7 @@
       <tr>
         <th>Feature</th>
         <th>Free</th>
-        <th>Paid</th>
+        <th>Premium</th>
       </tr>
     </thead>
     <tbody>
@@ -147,26 +155,26 @@
       <tr><td>Supports Google, Yelp, and Manual Reviews</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>Filter by Rating, Date, or Source</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>Reviewer Photos & Source Icons</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
-      <tr><td>Thumbnails & Full-Size Photos <br><small>(Not available in Google/Yelp APIs)</small></td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
+      <tr><td>Photos! Photos! Photos! Thumbnails & Full-Size Review Photos</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>Custom Styling (Stars, Fonts, Layout)</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>Swipe-Based Modal Browsing</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>Bulk Edit / Hide / Manage</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>API Import Support</td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>Manual Review Editor <br><small>(Add and manage reviews by hand, no API needed)</small></td><td class="checkmark">✔</td><td class="checkmark">✔</td></tr>
       <tr><td>JSON File Import</td><td class="crossmark">✘</td><td class="checkmark">✔</td></tr>
-      <tr><td>Import Google Reviews</td><td class="crossmark">✘</td><td>(1–3 site unlocks)</td></tr>
-      <tr><td>Import Yelp Reviews</td><td class="crossmark">✘</td><td>(1–3 site unlocks)</td></tr>
-      <tr><td>Priority Email Support</td><td class="crossmark">✘</td><td class="checkmark">✔</td></tr>
+      <tr><td>Import Google Reviews</td><td class="crossmark">✘</td><td class="checkmark">✔ (1–3 site unlocks)</td></tr>
+      <tr><td>Import Yelp Reviews</td><td class="crossmark">✘</td><td class="checkmark">✔ (1–3 site unlocks)</td></tr>
     </tbody>
   </table>
 
-<div class="promo-banner">
-  🎉 <strong>Introductory Pricing:</strong> Get full access for a one-time payment — no subscriptions, no hidden fees!
-</div>
-  
+  <div class="promo-banner">
+    🎉 <strong>Introductory Pricing:</strong> Get full access for a one-time payment — no subscriptions, no hidden fees!
+  </div>
+
   <div class="button-group">
-    <a href="https://square.link/u/EDZag3yY" class="btn">Buy Starter ($19)</a>
-    <a href="https://square.link/u/o6czHUAU" class="btn">Buy Pro ($49)</a>
+    <a href="https://square.link/u/EDZag3yY" class="btn">Starter ($19)</a>
+    <a href="https://square.link/u/o6czHUAU" class="btn featured">💎 Get Pro ($49)</a>
+    <a href="https://square.link/u/NncoXm5E" class="btn coffee">☕ Buy Dev a Coffee ($7)</a>
   </div>
 
   <p class="footer-note">
